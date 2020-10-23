@@ -14,9 +14,9 @@ return [
         'connection' => [
             'default' => [
                 'host' => 'mysql',
-                'dbname' => 'mykola_myronenko_local',
-                'username' => 'mykola_myronenko_local',
-                'password' => 'mykola_myronenko_local',
+                'dbname' => 'mykola_myronenko_build_local',
+                'username' => 'mykola_myronenko_build_local',
+                'password' => 'zJgJMqx8vFh&K6JUK8VN#XWV',
                 'model' => 'mysql4',
                 'engine' => 'innodb',
                 'initStatements' => 'SET NAMES utf8;',
@@ -33,7 +33,7 @@ return [
         ]
     ],
     'x-frame-options' => 'SAMEORIGIN',
-    'MAGE_MODE' => 'production',
+    'MAGE_MODE' => 'developer',
     'session' => [
         'save' => 'files'
     ],
@@ -72,7 +72,7 @@ return [
         'vertex' => 1
     ],
     'downloadable_domains' => [
-        'mykola-myronenko.local'
+        'mykola-myronenko-dev.local'
     ],
     'install' => [
         'date' => 'Tue, 06 Oct 2020 15:59:58 +0000'
@@ -81,33 +81,33 @@ return [
         'default' => [
             'web' => [
                 'unsecure' => [
-                    'base_url' => 'https://mykola-myronenko.local/',
+                    'base_url' => 'https://mykola-myronenko-dev.local/',
                     'base_link_url' => '{{unsecure_base_url}}',
-                    'base_static_url' => 'https://mykola-myronenko.local/static/',
-                    'base_media_url' => 'https://mykola-myronenko.local/media/'
+                    'base_static_url' => 'https://mykola-myronenko-dev.local/static/',
+                    'base_media_url' => 'https://mykola-myronenko-dev.local/media/'
                 ],
                 'secure' => [
-                    'base_url' => 'https://mykola-myronenko.local/',
+                    'base_url' => 'https://mykola-myronenko-dev.local/',
                     'base_link_url' => '{{secure_base_url}}',
-                    'base_static_url' => 'https://mykola-myronenko.local/static/',
-                    'base_media_url' => 'https://mykola-myronenko.local/media/'
-                ]
-            ]
+                    'base_static_url' => 'https://mykola-myronenko-dev.local/static/',
+                    'base_media_url' => 'https://mykola-myronenko-dev.local/media/'
+                ],
+            ],
         ],
         'websites' => [
             'additional_website' => [
                 'web' => [
                     'unsecure' => [
-                        'base_url' => 'https://mykola-myronenko-additional.local/',
-                        'base_link_url' => 'https://mykola-myronenko-additional.local/',
-                        'base_static_url' => 'https://mykola-myronenko-additional.local/static/',
-                        'base_media_url' => 'https://mykola-myronenko-additional.local/media/'
+                        'base_url' => 'https://mykola-myronenko-additional-dev.local/',
+                        'base_link_url' => 'https://mykola-myronenko-additional-dev.local/',
+                        'base_static_url' => 'https://mykola-myronenko-additional-dev.local/static/',
+                        'base_media_url' => 'https://mykola-myronenko-additional-dev.local/media/'
                     ],
                     'secure' => [
-                        'base_url' => 'https://mykola-myronenko-additional.local/',
-                        'base_link_url' => 'https://mykola-myronenko-additional.local/',
-                        'base_static_url' => 'https://mykola-myronenko-additional.local/static/',
-                        'base_media_url' => 'https://mykola-myronenko-additional.local/media/'
+                        'base_url' => 'https://mykola-myronenko-additional-dev.local/',
+                        'base_link_url' => 'https://mykola-myronenko-additional-dev.local/',
+                        'base_static_url' => 'https://mykola-myronenko-additional-dev.local/static/',
+                        'base_media_url' => 'https://mykola-myronenko-additional-dev.local/media/'
                     ]
                 ]
             ]
