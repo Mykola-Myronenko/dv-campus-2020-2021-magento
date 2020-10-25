@@ -33,7 +33,7 @@ return [
         ]
     ],
     'x-frame-options' => 'SAMEORIGIN',
-    'MAGE_MODE' => 'developer',
+    'MAGE_MODE' => 'production',
     'session' => [
         'save' => 'files'
     ],
@@ -76,5 +76,41 @@ return [
     ],
     'install' => [
         'date' => 'Tue, 06 Oct 2020 15:59:58 +0000'
+    ],
+    'system' => [
+        'default' => [
+            'web' => [
+                'unsecure' => [
+                    'base_url' => 'https://mykola-myronenko.local/',
+                    'base_link_url' => '{{unsecure_base_url}}',
+                    'base_static_url' => 'https://mykola-myronenko.local/static/',
+                    'base_media_url' => 'https://mykola-myronenko.local/media/'
+                ],
+                'secure' => [
+                    'base_url' => 'https://mykola-myronenko.local/',
+                    'base_link_url' => '{{secure_base_url}}',
+                    'base_static_url' => 'https://mykola-myronenko.local/static/',
+                    'base_media_url' => 'https://mykola-myronenko.local/media/'
+                ]
+            ]
+        ],
+        'websites' => [
+            'additional_website' => [
+                'web' => [
+                    'unsecure' => [
+                        'base_url' => 'https://mykola-myronenko-additional.local/',
+                        'base_link_url' => 'https://mykola-myronenko-additional.local/',
+                        'base_static_url' => 'https://mykola-myronenko-additional.local/static/',
+                        'base_media_url' => 'https://mykola-myronenko-additional.local/media/'
+                    ],
+                    'secure' => [
+                        'base_url' => 'https://mykola-myronenko-additional.local/',
+                        'base_link_url' => 'https://mykola-myronenko-additional.local/',
+                        'base_static_url' => 'https://mykola-myronenko-additional.local/static/',
+                        'base_media_url' => 'https://mykola-myronenko-additional.local/media/'
+                    ]
+                ]
+            ]
+        ]
     ]
 ];

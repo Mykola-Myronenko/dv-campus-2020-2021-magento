@@ -1,5 +1,5 @@
 # SSL certificates for development
-# $ mkcert mykola-myronenko.local www.mykola-myronenko.local mykola-myronenko-additional.local www.mykola-myronenko-additional.local
+# $ mkcert mykola-myronenko-dev.local www.mykola-myronenko-dev.local mykola-myronenko-additional-dev.local www.mykola-myronenko-additional-dev.local
 #
 # Start composition:
 # $ docker-compose up -d
