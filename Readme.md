@@ -1,3 +1,10 @@
+# Grunt tasks #
+
+Use this command to compile MykolaM/luma theme style files:
+```bash
+grunt exec:mykolam_luma_en_us && grunt less:mykolam_luma_en_us
+```
+
 # Project Deployment #
 
 After running the `composer install` command revert the following files:
