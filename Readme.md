@@ -42,3 +42,7 @@ Deployment process flow implemented in the above files:
 6) copy generated files from the build system;
 7) switch to the production mode;
 8) turn off maintenance (only for `deploy-full.sh`).
+
+# Database dump path #
+
+`var/db.sql.gz`
