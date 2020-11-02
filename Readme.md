@@ -1,3 +1,10 @@
+# Grunt tasks #
+
+Use this command to compile MykolaM/luma theme style files:
+```bash
+grunt exec:mykolam_luma_en_us && grunt less:mykolam_luma_en_us
+```
+
 # Project Deployment #
 
 After running the `composer install` command revert the following files:
@@ -35,3 +42,7 @@ Deployment process flow implemented in the above files:
 6) copy generated files from the build system;
 7) switch to the production mode;
 8) turn off maintenance (only for `deploy-full.sh`).
+
+# Database dump path #
+
+`var/db.sql.gz`

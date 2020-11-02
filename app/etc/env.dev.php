@@ -33,7 +33,7 @@ return [
         ]
     ],
     'x-frame-options' => 'SAMEORIGIN',
-    'MAGE_MODE' => 'developer',
+    'MAGE_MODE' => 'production',
     'session' => [
         'save' => 'files'
     ],
@@ -91,10 +91,17 @@ return [
                     'base_link_url' => '{{secure_base_url}}',
                     'base_static_url' => 'https://mykola-myronenko-dev.local/static/',
                     'base_media_url' => 'https://mykola-myronenko-dev.local/media/'
-                ],
-            ],
+                ]
+            ]
         ],
         'websites' => [
+            'base' => [
+                'design' => [
+                    'theme' => [
+                        'theme_id' => 4
+                    ]
+                ]
+            ],
             'additional_website' => [
                 'web' => [
                     'unsecure' => [
