@@ -1,8 +1,9 @@
 # Grunt tasks #
 
-Use this command to compile MykolaM/luma theme style files:
+
+Use this command to automatically compile MykolaM/luma theme style files when they change:
 ```bash
-grunt exec:mykolam_luma_en_us && grunt less:mykolam_luma_en_us
+grunt exec:mykolam_luma_en_us && grunt less:mykolam_luma_en_us && grunt watch:mykolam_luma_en_us
 ```
 
 # Project Deployment #
