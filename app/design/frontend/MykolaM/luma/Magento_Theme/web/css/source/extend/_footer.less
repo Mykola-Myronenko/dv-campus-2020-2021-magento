@@ -1,0 +1,15 @@
+& when (@media-common = true) {
+    .page-footer .footer.content,
+    .page-footer .footer.links .nav.item {
+        background-color: @color-sky-blue1;
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .page-footer,
+    .page-footer .footer.content,
+    .page-footer .footer.links .nav.item {
+        background-color: @color-sky-blue1;
+    }
+}
+
