@@ -1,0 +1,30 @@
+//
+//  Mobile
+//  _____________________________________________
+
+.lib-main-navigation() {
+    .navigation {
+        .lib-css(background, @color-sky-blue1);
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.lib-main-navigation-desktop() {
+    .navigation {
+        .lib-css(background, @color-sky-blue1);
+        .level0 {
+            .submenu {
+                .lib-css(background, @color-sky-blue1);
+                a {
+                    &:hover,
+                    &.ui-state-focus {
+                        .lib-css(background, lighten(@color-sky-blue1, 15));
+                    }
+                }
+            }
+        }
+    }
+}
