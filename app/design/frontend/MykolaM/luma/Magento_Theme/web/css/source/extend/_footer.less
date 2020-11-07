@@ -1,15 +1,34 @@
+//
+//  Footer
+//  _____________________________________________
+
 & when (@media-common = true) {
-    .page-footer .footer.content,
-    .page-footer .footer.links .nav.item {
-        background-color: @color-sky-blue1;
+    .footer {
+        &.content {
+            .links {
+                > li {
+                    .lib-css(background, @color-sky-blue1);
+
+                    a,
+                    a:visited {
+                        .text-style(@color-white, @font-weight__bold)
+                    }
+
+                    a:hover {
+                        color: darken(@color-white, 5);
+                    }
+                }
+
+                strong {
+                    .lib-css(color, darken(@color-white, 5));
+                }
+            }
+        }
     }
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
-    .page-footer,
-    .page-footer .footer.content,
-    .page-footer .footer.links .nav.item {
+    .page-footer {
         background-color: @color-sky-blue1;
     }
 }
-

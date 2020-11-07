@@ -5,6 +5,62 @@
 .lib-main-navigation() {
     .navigation {
         .lib-css(background, @color-sky-blue1);
+
+        a {
+            .lib-css(color, @color-white);
+        }
+
+        a:hover {
+            .lib-css(background, lighten(@color-sky-blue1, 10));
+
+        }
+
+        .level0 {
+            > .level-top {
+                &:hover {
+                    .lib-css(color, @color-white);
+                }
+            }
+
+            &.active {
+                .all-category {
+                    .ui-state-focus {
+                        .lib-css(background, @color-sky-blue1);
+                        .lib-css(color, @color-white);
+                    }
+                }
+            }
+
+            &.active,
+            &.has-active {
+                > a:not(.ui-state-active) {
+                    .lib-css(background, @color-sky-blue1);
+                    .lib-css(color, darken(@color-white, 5));
+
+                }
+            }
+        }
+
+        .submenu {
+            &:not(:first-child) {
+                .lib-css(background, @color-sky-blue1);
+
+                ul {
+                    > li {
+                        a {
+                            .lib-css(background, @color-sky-blue1);
+                            .lib-css(color, @color-white);
+                        }
+                    }
+                }
+
+                .active {
+                    > a {
+                        .lib-css(background, @color-sky-blue1);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -13,15 +69,42 @@
 //  _____________________________________________
 
 .lib-main-navigation-desktop() {
+    .section-item-content {
+        background-color: @color-sky-blue1
+    }
+
     .navigation {
         .lib-css(background, @color-sky-blue1);
+
         .level0 {
+            > .level-top {
+                .lib-css(background, @color-sky-blue1);
+                .lib-css(color, @color-white);
+
+                &:hover, &.ui-state-focus {
+                    .lib-css(background, lighten(@color-sky-blue1, 10));
+                    .lib-css(color, @color-white);
+                }
+            }
+
+            &.active,
+            &.has-active {
+                > .level-top {
+                    .lib-css(background, @color-sky-blue1);
+                    .lib-css(color, darken(@color-white, 5));
+
+                }
+            }
+
             .submenu {
                 .lib-css(background, @color-sky-blue1);
+
                 a {
+                    .lib-css(color, @color-white);
+
                     &:hover,
                     &.ui-state-focus {
-                        .lib-css(background, lighten(@color-sky-blue1, 15));
+                        .lib-css(background, lighten(@color-sky-blue1, 10));
                     }
                 }
             }
