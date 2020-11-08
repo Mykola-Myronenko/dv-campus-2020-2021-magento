@@ -13,20 +13,16 @@
     @_link-text-decoration-active: @link__active__text-decoration
 ) {
     .lib-css(color, @color-orange-red1);
-    .lib-css(text-decoration, @_link-text-decoration);
 
     &:visited {
         .lib-css(color, @color-orange-red1);
-        .lib-css(text-decoration, @_link-text-decoration-visited);
     }
 
     &:hover {
         .lib-css(color, darken(@color-orange-red1, 10));
-        .lib-css(text-decoration, @_link-text-decoration-hover);
     }
 
     &:active {
         .lib-css(color, @color-orange-red1);
-        .lib-css(text-decoration, @_link-text-decoration-active);
     }
 }
