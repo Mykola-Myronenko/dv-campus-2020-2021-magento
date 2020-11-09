@@ -17,7 +17,7 @@ git checkout .htaccess
 # Deploying changes to the server #
 
 Deployment is automated to decrease the possible downtime. Files to run:
-- `deploy-theme-only.sh` - deploy changes to templates, layouts, CSS, DI etc., without installing new modules, upgrading them or changing modules sequence.
+- `deploy-soft.sh` - deploy changes to templates, layouts, CSS, DI etc., without installing new modules, upgrading them or changing modules sequence.
 - `deploy-full.sh` - deploy changes that include installing new modules, or data/schema upgrades.
 
 To use this scripts the following environment variables must be set:
