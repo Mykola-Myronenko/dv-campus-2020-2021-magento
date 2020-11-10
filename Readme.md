@@ -1,8 +1,9 @@
 # Grunt tasks #
 
-Use this command to compile MykolaM/luma theme style files:
+
+Use this command to automatically compile MykolaM/luma theme style files when they change:
 ```bash
-grunt exec:mykolam_luma_en_us && grunt less:mykolam_luma_en_us
+grunt exec:mykolam_luma_en_us && grunt less:mykolam_luma_en_us && grunt watch:mykolam_luma_en_us
 ```
 
 # Project Deployment #
@@ -16,7 +17,7 @@ git checkout .htaccess
 # Deploying changes to the server #
 
 Deployment is automated to decrease the possible downtime. Files to run:
-- `deploy-theme-only.sh` - deploy changes to templates, layouts, CSS, DI etc., without installing new modules, upgrading them or changing modules sequence.
+- `deploy-soft.sh` - deploy changes to templates, layouts, CSS, DI etc., without installing new modules, upgrading them or changing modules sequence.
 - `deploy-full.sh` - deploy changes that include installing new modules, or data/schema upgrades.
 
 To use this scripts the following environment variables must be set:

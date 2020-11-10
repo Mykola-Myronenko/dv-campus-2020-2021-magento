@@ -1,5 +1,5 @@
 /**
- *  grunt exec:mykolam_luma_en_us && grunt less:mykolam_luma_en_us
+ *  grunt exec:mykolam_luma_en_us && grunt less:mykolam_luma_en_us && grunt watch:mykolam_luma_en_us
  */
 module.exports = {
     mykolam_luma_en_us: {
