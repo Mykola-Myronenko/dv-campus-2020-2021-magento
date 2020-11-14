@@ -120,9 +120,15 @@
     Options +FollowSymLinks
     RewriteEngine on
 
+    # Development
+    SetEnvIf Host .*mykola-myronenko-dev.local.* MAGE_RUN_CODE=base
+    SetEnvIf Host .*mykola-myronenko-dev.local.* MAGE_RUN_TYPE=website
+    SetEnvIf Host .*mykola-myronenko-additional-dev.local.* MAGE_RUN_CODE=additional_website
+    SetEnvIf Host .*mykola-myronenko-additional-dev.local.* MAGE_RUN_TYPE=website
+
+    # Production
     SetEnvIf Host .*mykola-myronenko-local.* MAGE_RUN_CODE=base
     SetEnvIf Host .*mykola-myronenko-local.* MAGE_RUN_TYPE=website
-
     SetEnvIf Host .*mykola-myronenko-additional.local.* MAGE_RUN_CODE=additional_website
     SetEnvIf Host .*mykola-myronenko-additional.local.* MAGE_RUN_TYPE=website
 
