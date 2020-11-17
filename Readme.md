@@ -1,7 +1,12 @@
 # Grunt tasks #
 
+Depending on which locale you are working with, use this commands to automatically compile MykolaM/luma theme style files when they change:
 
-Use this command to automatically compile MykolaM/luma theme style files when they change:
+for uk_UA:
+```bash
+grunt exec:mykolam_luma_uk_ua && grunt less:mykolam_luma_uk_ua && grunt watch:mykolam_luma_uk_ua
+```
+for en_US:
 ```bash
 grunt exec:mykolam_luma_en_us && grunt less:mykolam_luma_en_us && grunt watch:mykolam_luma_en_us
 ```
