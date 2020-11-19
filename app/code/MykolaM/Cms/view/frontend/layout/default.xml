@@ -13,6 +13,17 @@
                 </block>
             </container>
         </referenceContainer>
+        <referenceContainer name="sidebar.additional">
+            <container htmlTag="div" htmlClass="some-demo-block-wrapper" after="-">
+                <block class="Magento\Cms\Block\Block"
+                       name="some.demo.block"
+                >
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">some_demo_block</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
     </body>
 </page>
 
