@@ -1,8 +1,8 @@
 <?php /** @var \MykolaM\ControllerDemo\Block\Info $block */ ?>
 <?php /** @var \Magento\Framework\Escaper $escaper */ ?>
 
-<p><?= $escaper->escapeHtml(__('Full name: %1 %2', $block->getName(), $block->getSurname())) ?></p>
-<p>
+<p class="full-name"><?= $escaper->escapeHtml(__('Full name: %1 %2', $block->getName(), $block->getSurname())) ?></p>
+<p class="repository-link">
     <?= $escaper->escapeHtml(__('Repository URL: ')) ?>
     <a href="<?= $escaper->escapeUrl($block->getRepo()) ?>">
         <?= $escaper->escapeHtml($block->getRepo()) ?>
